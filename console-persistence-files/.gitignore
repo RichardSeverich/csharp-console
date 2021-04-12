@@ -1,0 +1,12 @@
+# Visual Studio
+bin/
+obj/
+
+# Visual Studio 2015
+.vs/
+
+# Files dat
+*.dat
+
+# Visual Studio Code
+/.vscode/
