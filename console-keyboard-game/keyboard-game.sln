@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "keyboard-game-core", "keyboard-game-core\keyboard-game-core.csproj", "{FA416663-E464-4DC0-A15F-FC9DC149DBDD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "keyboard-game-console", "keyboard-game-console\keyboard-game-console.csproj", "{2CB32E1F-BF63-4058-A4C9-157D6F6382FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA416663-E464-4DC0-A15F-FC9DC149DBDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA416663-E464-4DC0-A15F-FC9DC149DBDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA416663-E464-4DC0-A15F-FC9DC149DBDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA416663-E464-4DC0-A15F-FC9DC149DBDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CB32E1F-BF63-4058-A4C9-157D6F6382FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CB32E1F-BF63-4058-A4C9-157D6F6382FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CB32E1F-BF63-4058-A4C9-157D6F6382FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CB32E1F-BF63-4058-A4C9-157D6F6382FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77EA0D49-6654-4CD1-A2C2-CE6F36F0461D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77EA0D49-6654-4CD1-A2C2-CE6F36F0461D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77EA0D49-6654-4CD1-A2C2-CE6F36F0461D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77EA0D49-6654-4CD1-A2C2-CE6F36F0461D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E98E6A1-D141-47AF-82B2-AC4BFD7CE88A}
+	EndGlobalSection
+EndGlobal
