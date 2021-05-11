@@ -1,6 +1,4 @@
 ﻿# keyboard-game🚀
-Jala Foundation devint32.
-Miguel Rodrigo Aguilar Paredes.
 
 # Keyboard game is a funny console application that builds keyboard based on user input.:
 
