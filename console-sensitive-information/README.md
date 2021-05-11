@@ -253,6 +253,3 @@ bin\Debug\net5.0\App.exe update -uuid xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxx -contac
 
 ### ID
 * ``bin\Debug\net5.0\App.exe remove -id 1``
-
-### Jala Foundation dev32.
-### Miguel Rodrigo Aguilar Paredes.
