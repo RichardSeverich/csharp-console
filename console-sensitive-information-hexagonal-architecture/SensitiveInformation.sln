@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SensitiveInformationCore", "Domain\SensitiveInformationCore\SensitiveInformationCore.csproj", "{A803579B-91AE-495F-B807-52BA4D8DD327}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SensitiveInformationConsole", "Infrastructure\SensitiveInformationConsole\SensitiveInformationConsole.csproj", "{9AF33D1E-0CF6-467F-AE72-35A2CD1E8565}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SensitiveInformationDatabase", "Infrastructure\SensitiveInformationDatabase\SensitiveInformationDatabase.csproj", "{C392D4EB-AA4C-49E3-9892-0694C8447D57}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SensitiveInformationAPI", "Infrastructure\SensitiveInformationAPI\SensitiveInformationAPI.csproj", "{A14D824B-800F-4BD6-B827-4657DA361AD7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{81054583-483F-41A0-93AF-18757D66C4C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{70B996A5-365F-4BAC-A0A1-F4F746D6FC3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensitiveInformationApplication", "Domain\SensitiveInformationApplication\SensitiveInformationApplication.csproj", "{61F49390-09AB-41E6-8777-FB04FA94CF4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A803579B-91AE-495F-B807-52BA4D8DD327}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A803579B-91AE-495F-B807-52BA4D8DD327}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A803579B-91AE-495F-B807-52BA4D8DD327}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A803579B-91AE-495F-B807-52BA4D8DD327}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AF33D1E-0CF6-467F-AE72-35A2CD1E8565}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AF33D1E-0CF6-467F-AE72-35A2CD1E8565}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AF33D1E-0CF6-467F-AE72-35A2CD1E8565}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AF33D1E-0CF6-467F-AE72-35A2CD1E8565}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C392D4EB-AA4C-49E3-9892-0694C8447D57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C392D4EB-AA4C-49E3-9892-0694C8447D57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C392D4EB-AA4C-49E3-9892-0694C8447D57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C392D4EB-AA4C-49E3-9892-0694C8447D57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A14D824B-800F-4BD6-B827-4657DA361AD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A14D824B-800F-4BD6-B827-4657DA361AD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A14D824B-800F-4BD6-B827-4657DA361AD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A14D824B-800F-4BD6-B827-4657DA361AD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61F49390-09AB-41E6-8777-FB04FA94CF4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61F49390-09AB-41E6-8777-FB04FA94CF4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61F49390-09AB-41E6-8777-FB04FA94CF4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61F49390-09AB-41E6-8777-FB04FA94CF4F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A803579B-91AE-495F-B807-52BA4D8DD327} = {70B996A5-365F-4BAC-A0A1-F4F746D6FC3E}
+		{9AF33D1E-0CF6-467F-AE72-35A2CD1E8565} = {81054583-483F-41A0-93AF-18757D66C4C6}
+		{C392D4EB-AA4C-49E3-9892-0694C8447D57} = {81054583-483F-41A0-93AF-18757D66C4C6}
+		{A14D824B-800F-4BD6-B827-4657DA361AD7} = {81054583-483F-41A0-93AF-18757D66C4C6}
+		{61F49390-09AB-41E6-8777-FB04FA94CF4F} = {70B996A5-365F-4BAC-A0A1-F4F746D6FC3E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A0C9C983-47A7-47B4-9F9C-2B8C20D22A6B}
+	EndGlobalSection
+EndGlobal
