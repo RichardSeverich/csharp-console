@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<AssemblyName>App</AssemblyName>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net5.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Domain\SensitiveInformationCore\SensitiveInformationCore.csproj" />
+		<ProjectReference Include="..\..\Domain\SensitiveInformationApplication\SensitiveInformationApplication.csproj" />
+		<ProjectReference Include="..\SensitiveInformationDatabase\SensitiveInformationDatabase.csproj" />
+	</ItemGroup>
+
+</Project>
