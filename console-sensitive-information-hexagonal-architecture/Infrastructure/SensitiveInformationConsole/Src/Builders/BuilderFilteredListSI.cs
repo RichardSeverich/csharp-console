@@ -75,7 +75,7 @@ namespace SensitiveInformationConsole.Src.Builders
                     return UseCaseFilterList.FilterByBirthday(listSI, value);
 
                 case CommandOption.SI_FAVORITE:
-                    return UseCaseFilterList.FilterByFavorite(listSI, value);
+                    return UseCaseFilterList.FilterByFavorite(listSI);
 
                 case CommandOption.SI_CONTENT_KEY:
                     return UseCaseFilterList.FilterByContentKey(listSI, value);

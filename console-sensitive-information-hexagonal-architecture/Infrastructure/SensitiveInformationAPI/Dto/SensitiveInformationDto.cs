@@ -1,4 +1,5 @@
-﻿using SensitiveInformationCore.Src.Main.EntityDomain;
+﻿using SensitiveInformationCore.Src.Main.Converts;
+using SensitiveInformationCore.Src.Main.EntityDomain;
 using System;
 using System.Collections.Generic;
 
@@ -10,7 +11,7 @@ namespace SensitiveInformationAPI.Dto
 
         public string Uuid { get; set; }
 
-        public EnumSIType Type { get; set; }
+        public string Type { get; set; }
 
         public string InformationName { get; set; }
 
@@ -66,7 +67,7 @@ namespace SensitiveInformationAPI.Dto
             {
                 Id = entityDomain.id,
                 Uuid = entityDomain.uuid,
-                Type = entityDomain.type,
+                Type = entityDomain.type.ToString(),
                 InformationName = entityDomain.informationName,
                 ContainerName = entityDomain.containerName,
                 Notes = entityDomain.notes,
@@ -100,7 +101,7 @@ namespace SensitiveInformationAPI.Dto
             {
                 id = Id,
                 uuid = Uuid,
-                type = Type,
+                type = ConvertStringToEnum<EnumSIType>.Convert(Type),
                 informationName = InformationName,
                 containerName = ContainerName,
                 notes = Notes,

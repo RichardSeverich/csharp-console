@@ -12,7 +12,7 @@ namespace SensitiveInformationApplication.Src.Main.UseCases
         {
             return listSI.Where(si => si.uuid.Equals(value)).ToList();
         }
-
+        
         public static List<SensitiveInformation> FilterById(List<SensitiveInformation> listSI, string value)
         {
             return listSI.Where(si => si.id.ToString().Equals(value)).ToList();
@@ -108,7 +108,7 @@ namespace SensitiveInformationApplication.Src.Main.UseCases
             return listSI.Where(si => si.birthday.Equals(value)).ToList();
         }
 
-        public static List<SensitiveInformation> FilterByFavorite(List<SensitiveInformation> listSI, string value)
+        public static List<SensitiveInformation> FilterByFavorite(List<SensitiveInformation> listSI)
         {
             return listSI.Where(si => si.favorite).ToList();
         }
@@ -120,32 +120,67 @@ namespace SensitiveInformationApplication.Src.Main.UseCases
 
         public static List<SensitiveInformation> FilterByUrlsList(List<SensitiveInformation> listSI, string value)
         {
+            listSI = listSI.Where(si => si.urlsList != null).ToList();
             var listToSearchUrl = new List<string>(value.Split(sign));
             return listSI.Where(si => si.urlsList.Any(url => listToSearchUrl.Contains(url))).ToList();
         }
 
         public static List<SensitiveInformation> FilterByTagsList(List<SensitiveInformation> listSI, string value)
         {
+            listSI = listSI.Where(si => si.tagsList != null).ToList();
             var listToSearchTag = new List<string>(value.Split(sign));
             return listSI.Where(si => si.tagsList.Any(tag => listToSearchTag.Contains(tag))).ToList();
         }
 
         public static List<SensitiveInformation> FilterByEmailsList(List<SensitiveInformation> listSI, string value)
         {
+            listSI = listSI.Where(si => si.emailsList != null).ToList();
             var listToSearchEmail = new List<string>(value.Split(sign));
             return listSI.Where(si => si.emailsList.Any(email => listToSearchEmail.Contains(email))).ToList();
         }
 
         public static List<SensitiveInformation> FilterByPhoneNumbersList(List<SensitiveInformation> listSI, string value)
         {
+            listSI = listSI.Where(si => si.phoneNumbersList != null).ToList();
             var listToSearchPNumber = new List<string>(value.Split(sign));
             return listSI.Where(si => si.phoneNumbersList.Any(phone => listToSearchPNumber.Contains(phone))).ToList();
         }
 
         public static List<SensitiveInformation> FilterByAddressesList(List<SensitiveInformation> listSI, string value)
         {
+            listSI = listSI.Where(si => si.addressesList != null).ToList();
             var listToSearchAdress = new List<string>(value.Split(sign));
             return listSI.Where(si => si.addressesList.Any(adress => listToSearchAdress.Contains(adress))).ToList();
+        }
+
+        public static List<SensitiveInformation> FilterByUrlsList(List<SensitiveInformation> listSI, List<string> listToSearchUrl)
+        {
+            listSI = listSI.Where(si => si.urlsList != null).ToList();
+            return listSI.Where(si => si.urlsList.Any(url => listToSearchUrl.Contains(url))).ToList();
+        }
+
+        public static List<SensitiveInformation> FilterByTagsList(List<SensitiveInformation> listSI, List<string> listToSearchTag)
+        {
+            listSI = listSI.Where(si => si.tagsList != null).ToList();
+            return listSI.Where(si => si.tagsList.Any(tag => listToSearchTag.Contains(tag))).ToList();
+        }
+
+        public static List<SensitiveInformation> FilterByEmailsList(List<SensitiveInformation> listSI, List<string> listToSearchEmail)
+        {
+            listSI = listSI.Where(si => si.emailsList != null).ToList();
+            return listSI.Where(si => si.emailsList.Any(email => listToSearchEmail.Contains(email))).ToList();
+        }
+
+        public static List<SensitiveInformation> FilterByPhoneNumbersList(List<SensitiveInformation> listSI, List<string> listToSearchPhoneNumber)
+        {
+            listSI = listSI.Where(si => si.phoneNumbersList != null).ToList();
+            return listSI.Where(si => si.phoneNumbersList.Any(phone => listToSearchPhoneNumber.Contains(phone))).ToList();
+        }
+
+        public static List<SensitiveInformation> FilterByAddressesList(List<SensitiveInformation> listSI, List<string> listToSearchAddresses)
+        {
+            listSI = listSI.Where(si => si.addressesList != null).ToList();
+            return listSI.Where(si => si.addressesList.Any(address => listToSearchAddresses.Contains(address))).ToList();
         }
     }
 }

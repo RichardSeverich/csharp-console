@@ -81,7 +81,21 @@ database/schema: master
   <img src="documentation/database.jpg">
 </p>
 
+## Architecture
+
+<p align="center">
+  <img src="documentation/hexagon-architecture-si.jpg">
+</p>
+
+## Descriptive Architecture
+
+<p align="center">
+  <img src="documentation/hexagonal-arquitecture-descriptive.jpg">
+</p>
+
 # Usage 🎮
+
+## CONSOLE:
 
 ### Type of sensitive information
 ```
@@ -253,3 +267,60 @@ bin\Debug\net5.0\App.exe update -uuid xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxx -contac
 
 ### ID
 * ``bin\Debug\net5.0\App.exe remove -id 1``
+
+## API:
+
+```
+GET localhost:5000/sensitiveinformation
+POST localhost:5000/sensitiveinformation
+POST localhost:5000/sensitiveinformationfilter
+PUT localhost:5000/sensitiveinformation/1
+DELETE localhost:5000/sensitiveinformation/1
+
+{
+  "id": 1,
+  "uuid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+  "type": "note",
+  "informationName": "sensitive notes",
+  "containerName": "notes",
+  "notes": "notes of passwords",
+  "username": "romeo",
+  "password": "medrano",
+  "cardName": "card",
+  "cardEntity": "visa debit",
+  "cardNumber": "6544-0223-0007-5042",
+  "cardExpirationDate": "2022-12-15T00:00:00",
+  "cardSecurityNumber": 3371,
+  "contactName": "romeo",
+  "contactLastname": "garcia medrano",
+  "businessName": "pool room",
+  "postalCode": 5551,
+  "country": "BOLIVIA",
+  "state": "santa cruz",
+  "birthday": "1884-10-10T00:00:00",
+  "favorite": true,
+  "contentKey": "linux",
+  "urlsList": [
+    "tiktok.com",
+    "facebook.com",
+    "twiter.com",
+    "whatsapp.com"
+  ],
+  "tagsList": [
+    "@note1",
+    "@note2",
+    "@note3"
+  ],
+  "emailsList": [
+    "romeo@gmail.com",
+    "garc@hotmail.com"
+  ],
+  "phoneNumbersList": [
+    "71765481"
+  ],
+  "addressesList": [
+    "4toanillo",
+    "2 anillo"
+  ]
+},
+```
